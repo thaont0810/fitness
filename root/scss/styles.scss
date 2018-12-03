@@ -1,0 +1,42 @@
+@import "../scss/bootstrap/bootstrap.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Proxima";
+  src: url('../fonts/ProximaNova_Regular.otf');
+}
+
+body {
+  font-family: 'Proxima';
+  font-size: 18px;
+  color :#bbbbbb;
+}
+
+.container {
+  width: 1170px;
+}
+
+header {
+  background: url(../images/header-bg.png);
+}
+
+.header {
+  // background: no-repeat center center;
+  background-size: cover;
+}
+
+.nav-item {
+  padding: 16px 30px;
+  &:hover {
+    background: #00a8ff;
+  }
+}
+
+.nav-link {
+  // color: #fff;
+}
