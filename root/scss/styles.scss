@@ -1,9 +1,20 @@
-@import "../scss/bootstrap/bootstrap.scss";
+@import '../scss/bootstrap/bootstrap';
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 @font-face {
@@ -14,29 +25,353 @@
 body {
   font-family: 'Proxima';
   font-size: 18px;
-  color :#bbbbbb;
+  color: #bbbbbb;
 }
 
 .container {
   width: 1170px;
 }
 
-header {
-  background: url(../images/header-bg.png);
-}
-
 .header {
-  // background: no-repeat center center;
-  background-size: cover;
-}
+  position: relative;
+  color: #fff;
 
-.nav-item {
-  padding: 16px 30px;
-  &:hover {
-    background: #00a8ff;
+  &__bg {
+    // width: 100%;
+    height: 1200px;
+    // object-fit: cover;
+    background: url('../images/header-bg.png');
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(#2d2a50, 0.9);
+    }
+  }
+
+  // .overlay-header {
+  //   background: rgba(#2d2a50, 0.9);
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   height: 100%;
+  //   width: 100%;
+  //   // opacity: .9;
+  // }
+
+  &__slogan {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+
+    &--1 {
+      font-size: 20px;
+    }
+
+    &--2 {
+      font-size: 35px;
+      font-weight: bold;
+    }
   }
 }
 
-.nav-link {
-  // color: #fff;
+.nav-container {
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  &.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    transition: transform .2s;
+
+    .nav {
+      margin-top: 15px;
+
+      .logo {
+        display: none;
+      }
+
+      .fix {
+        display: block;
+      }
+
+      &__link {
+        color: #bbbbbb;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  width: 1500px;
+
+  justify-content: space-between;
+  margin: 77px auto 0;
+  align-items: center;
+
+  &__brand {
+    .logo {
+      display: block;
+    }
+
+    .fix {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    padding: 14px 28px;
+    display: block;
+    color: #fff;
+
+    &:hover {
+      background: #00a8ff;
+      color: #fff;
+    }
+  }
+}
+
+.box {
+  position: relative;
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -215px;
+  }
+
+  &__item {
+    width: 370px;
+    height: 286px;
+    margin: 0 15px;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-child(3n+1) {
+      margin-left: 0;
+
+      .overlay-item {
+        background-image: url(../images/header-item-bg.png);
+
+        &::before {
+          background: rgba(#f44336, 0.8);
+        }
+      }
+
+    }
+
+    &:nth-child(3n+2) {
+      .overlay-item::before {
+        background: rgba(#4caf50, 0.8);
+      }
+    }
+
+    &:nth-child(3n+3) {
+      margin-right: 0;
+
+      .overlay-item::before {
+        background: rgba(#07a9ee, 0.8);
+      }
+    }
+
+    .overlay-item {
+      width: 370px;
+      height: 286px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        top: 0;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 0;
+    margin: 35px;
+    font-weight: 600;
+  }
+
+  .slider {
+    position: absolute;
+    top: 95px;
+
+    &__content {
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      &:nth-child(3n+1) {
+        &::before {
+          content: '';
+          background: url(../images/icon/jump.png) no-repeat;
+          width: 16px;
+          height: 26px;
+          display: block;
+          position: absolute;
+          top: 18px;
+        }
+      }
+
+      &:nth-child(3n+2) {
+        &::before {
+          content: '';
+          background: url(../images/icon/gym.png) no-repeat;
+          width: 20px;
+          height: 20px;
+          display: block;
+          position: absolute;
+          top: 18px;
+
+        }
+      }
+
+      &:nth-child(3n+3) {
+        &::before {
+          content: '';
+          background: url(../images/icon/heart.png) no-repeat;
+          width: 23px;
+          height: 20px;
+          display: block;
+          position: absolute;
+          top: 18px;
+
+        }
+      }
+
+      span {
+        &:first-child {
+          padding-left: 35px;
+
+        }
+      }
+    }
+
+    .owl-dots {
+      position: absolute;
+      right: 30px;
+      top: -68px;
+
+      .owl-dot {
+        outline: none;
+
+        &.active,
+        &:hover {
+          span {
+            background: #fff;
+          }
+        }
+
+        span {
+          background: none;
+          border-radius: 0;
+        }
+
+      }
+
+      span {
+        width: 8px;
+        height: 8px;
+        border: 2px solid #fff;
+        margin: 5px 3px;
+
+      }
+
+
+    }
+  }
+
+  .membership {
+    .content {
+      position: absolute;
+      bottom: 0;
+      padding: 35px;
+
+      span {
+        display: block;
+        font-size: 24px;
+
+        &:last-child {
+          font-size: 36px;
+          font-weight: 600;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    &:hover {
+      .overlay-item {
+        &::before {
+          background: rgba(#fff, 0.5);
+        }
+
+        img {}
+
+      }
+
+      .box__title {
+        display: none;
+      }
+
+      .content {
+        position: relative;
+        // transform: translateY(50%);
+      }
+
+      .membership__link {
+        display: block;
+      }
+    }
+
+
+
+    &__link {
+      padding: 15px 30px;
+      border: 1px solid #fff;
+      position: absolute;
+      bottom: 0;
+      margin: 35px;
+      color: #fff;
+      font-weight: 600;
+      display: none;
+    }
+  }
 }
