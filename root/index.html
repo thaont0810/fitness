@@ -20,11 +20,10 @@
     <div class="header__bg">
 
     </div>
-    <!-- <img class="header__bg" src="images/header-bg.png" alt=""> -->
     <div class="overlay-header"></div>
     <div class="container header__slogan">
       <p class="header__slogan--1">Take care of your body. </p>
-      <h2 class="header__slogan--2">It's the only place you have to live.</h2>
+      <h2 class="header__slogan--2" id="typing">It's the only place you have to live.</h2>
     </div>
 
     <div class="nav-container">
@@ -59,14 +58,11 @@
     <div class="box container">
       <ul class="list">
         <li class="box__item schedule">
-          <div class="overlay-item">
-            <!-- <img src="images/header-item-bg.png" alt=""> -->
-          </div>
           <span class="box__title">Today's Schedule</span>
-          <ul class="slider owl-carousel owl-theme">
+          <ul class="slider owl-carousel owl-theme slider-schedule">
             <li class="item">
               <div class="slider__content">
-                <span>Early Exercise</span>
+                <span>1 Early Exercise</span>
                 <span>8:30 - 10:00</span>
               </div>
               <div class="slider__content">
@@ -80,7 +76,7 @@
             </li>
             <li class="item">
               <div class="slider__content">
-                <span>Early Exercise</span>
+                <span>2 Early Exercise</span>
                 <span>8:30 - 10:00</span>
               </div>
               <div class="slider__content">
@@ -94,7 +90,7 @@
             </li>
             <li class="item">
               <div class="slider__content">
-                <span>Early Exercise</span>
+                <span>3 Early Exercise</span>
                 <span>8:30 - 10:00</span>
               </div>
               <div class="slider__content">
@@ -110,9 +106,7 @@
           </ul>
         </li>
         <li class="box__item membership">
-          <div class="overlay-item">
-            <!-- <img src="images/header-item-bg.png" alt=""> -->
-          </div>
+          <div class="img"></div>
           <span class="box__title">Premium Membership</span>
           <div class="content">
             <span>Register Today</span>
@@ -121,20 +115,69 @@
           <a href="" class="membership__link">Register</a>
         </li>
         <li class="box__item clients">
-          <div class="overlay-item">
-            <img src="images/header-item-bg.png" alt="">
-          </div>
           <span class="box__title">Happy Clients</span>
-          <p>dd</p>
+          <ul class="slider owl-carousel owl-theme slider-clients">
+            <li class="item">
+              <p>1I couldn’t be more happy with the results!</p>
+              <span>Adam Jordan</span>
+            </li>
+            <li class="item">
+              <p>2I couldn’t be more happy with the results!</p>
+              <span>Adam Jordan</span>
+            </li>
+            <li class="item">
+              <p>3I couldn’t be more happy with the results!</p>
+              <span>Adam Jordan</span>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
   </header>
 
+  <main>
+    <section class="section services">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Services</h2>
+          <p class="section__desc">Achieve the best results with our wide variety of trainings!</p>
+        </div>
+
+        <ul class="row">
+          <li class="col-md-4 services__item">
+            <div class="services__img-container">
+              <img src="images/icon/monitor.png" alt="">
+            </div>
+            <h3 class="services__title">Cardio Training</h3>
+            <p class="services__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis quisquam
+              alias quibusdam illum iust.</p>
+          </li>
+          <li class="col-md-4 services__item">
+            <div class="services__img-container">
+              <img src="images/icon/yoga.png" alt="">
+            </div>
+            <h3 class="services__title">Yoga Pilates</h3>
+            <p class="services__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis quisquam
+              alias quibusdam illum iust.</p>
+          </li>
+          <li class="col-md-4 services__item">
+            <div class="services__img-container">
+              <img src="images/icon/weightlift.png" alt="">
+            </div>
+            <h3 class="services__title">Power Training</h3>
+            <p class="services__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis quisquam
+              alias quibusdam illum iust.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!--build:js js/main.min.js -->
   <script src="js/owl.carousel.min.js"></script>
+  <script src="js/typewriter.js"></script>
   <script src="js/main.js"></script>
   <!-- endbuild -->
 </body>
