@@ -59,7 +59,7 @@ gulp.task('default', ['watch']);
 gulp.task('useref', function(){
   return gulp.src('root/*.html')
     .pipe(useref())
-    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulpIf('root/js/**/*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('dist'))
 });

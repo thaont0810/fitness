@@ -7,43 +7,359 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Fitness</title>
 
+  <link rel="stylesheet" href="css/lib.min.css">
+
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
 
-  <nav class="nav">
-    <h1 class="nav__brand">
-      <a href="" class="nav__brand__link">
-        <img class="nav__brand__img" src="images/logo.png" alt="">
-      </a>
-    </h1>
-
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a href="" class="nav__link">Intro</a>
-      </li>
-      <li class="nav__item">
-        <a href="" class="nav__link">Services</a>
-      </li>
-      <li class="nav__item">
-        <a href="" class="nav__link">Team</a>
-      </li>
-      <li class="nav__item">
-        <a href="" class="nav__link">Pricing</a>
-      </li>
-      <li class="nav__item">
-        <a href="" class="nav__link">Revervation</a>
-      </li>
-    </ul>
-  </nav>
-
-  <header class="header">
+  <header class="header" id="top">
+    <div class="header__bg"></div>
     <div class="overlay-header"></div>
-    <div class="container">
+    <div class="container header__slogan">
+      <p class="header__slogan--1">Take care of your body. </p>
+      <h2 class="header__slogan--2" id="typing">It's the only place you have to live.</h2>
+    </div>
 
+    <div class="nav-container">
+      <nav class="nav">
+        <h1 class="nav__brand">
+          <a href="" class="nav__brand__link">
+            <img class="nav__brand__img logo" src="images/logo.png" alt="">
+            <img class="nav__brand__img fix" src="images/logo_fix.png" alt="">
+          </a>
+        </h1>
+
+        <ul class="nav__list" id="nav__list">
+          <li class="nav__item">
+            <a href="#top" class="nav__link">Intro</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#team" class="nav__link">Team</a>
+          </li>
+          <li class="nav__item">
+            <a href="#pricing" class="nav__link">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a href="#twitter" class="nav__link">Revervation</a>
+          </li>
+          <li class="nav__item sign-up">
+            <a href="" class="nav__link">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="box container">
+      <ul class="list">
+        <li class="box__item schedule">
+          <span class="box__title">Today's Schedule</span>
+          <ul class="slider owl-carousel owl-theme slider-schedule">
+            <li class="item">
+              <div class="slider__content">
+                <span>1 Early Exercise</span>
+                <span>8:30 - 10:00</span>
+              </div>
+              <div class="slider__content">
+                <span>Muscle Building</span>
+                <span>8:30 - 10:00</span>
+              </div>
+              <div class="slider__content">
+                <span>Cardio</span>
+                <span>8:30 - 10:00</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="slider__content">
+                <span>2 Early Exercise</span>
+                <span>8:30 - 10:00</span>
+              </div>
+              <div class="slider__content">
+                <span>Muscle Building</span>
+                <span>8:30 - 10:00</span>
+              </div>
+              <div class="slider__content">
+                <span>Cardio</span>
+                <span>8:30 - 10:00</span>
+              </div>
+            </li>
+            <li class="item">
+              <div class="slider__content">
+                <span>3 Early Exercise</span>
+                <span>8:30 - 10:00</span>
+              </div>
+              <div class="slider__content">
+                <span>Muscle Building</span>
+                <span>8:30 - 10:00</span>
+              </div>
+              <div class="slider__content">
+                <span>Cardio</span>
+                <span>8:30 - 10:00</span>
+              </div>
+            </li>
+
+          </ul>
+        </li>
+        <li class="box__item membership">
+          <div class="img"></div>
+          <span class="box__title">Premium Membership</span>
+          <div class="content">
+            <span>Register Today</span>
+            <span>20% discount</span>
+          </div>
+          <a href="" class="membership__link">Register</a>
+        </li>
+        <li class="box__item clients">
+          <span class="box__title">Happy Clients</span>
+          <ul class="slider owl-carousel owl-theme slider-clients">
+            <li class="item">
+              <p>1I couldn’t be more happy with the results!</p>
+              <span>Adam Jordan</span>
+            </li>
+            <li class="item">
+              <p>2I couldn’t be more happy with the results!</p>
+              <span>Adam Jordan</span>
+            </li>
+            <li class="item">
+              <p>3I couldn’t be more happy with the results!</p>
+              <span>Adam Jordan</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </header>
+
+  <main>
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Services</h2>
+          <p class="section__desc">Achieve the best results with our wide variety of trainings!</p>
+        </div>
+
+        <ul class="row justify-content-between">
+          <li class="col-md-4 services__item">
+            <div class="services__img-container">
+              <img src="images/icon/monitor.png" alt="">
+            </div>
+            <h3 class="services__title">Cardio Training</h3>
+            <p class="services__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis quisquam
+              alias quibusdam illum iust.</p>
+          </li>
+          <li class="col-md-4 services__item">
+            <div class="services__img-container">
+              <img src="images/icon/yoga.png" alt="">
+            </div>
+            <h3 class="services__title">Yoga Pilates</h3>
+            <p class="services__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis quisquam
+              alias quibusdam illum iust.</p>
+          </li>
+          <li class="col-md-4 services__item">
+            <div class="services__img-container">
+              <img src="images/icon/weightlift.png" alt="">
+            </div>
+            <h3 class="services__title">Power Training</h3>
+            <p class="services__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis quisquam
+              alias quibusdam illum iust.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section team" id="team">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Team</h2>
+          <p class="section__desc">We’re dream team!</p>
+        </div>
+
+        <ul class="row justify-content-between">
+          <li class="col-md-4 team__item">
+            <div class="team__header">
+              <div class="team__hover">
+                <div class="team__hover__detail">
+                  <span>$69.00</span>
+                  <span>1 - 5 sessions/ month</span>
+                </div>
+              </div>
+              <img class="team__bg-img" src="images/team-bg.png" alt="">
+            </div>
+            <div class="team__ava">
+              <img class="team__ava__img" src="images/team-ava.png" alt="">
+            </div>
+            <div class="team__content">
+              <h4 class="team__name">Eva Adamson</h4>
+              <p class="team__desc">Fitness Instructor</p>
+              <a class="team__link" href="">Sign Up now</a>
+            </div>
+          </li>
+          <li class="col-md-4 team__item">
+            <div class="team__header">
+              <div class="team__hover">
+                <div class="team__hover__detail">
+                  <span>$69.00</span>
+                  <span>1 - 5 sessions/ month</span>
+                </div>
+              </div>
+              <img class="team__bg-img" src="images/team-bg.png" alt="">
+            </div>
+            <div class="team__ava">
+              <img class="team__ava__img" src="images/team-ava.png" alt="">
+            </div>
+            <div class="team__content">
+              <h4 class="team__name">Eva Adamson</h4>
+              <p class="team__desc">Fitness Instructor</p>
+              <a class="team__link" href="">Sign Up now</a>
+            </div>
+          </li>
+          <li class="col-md-4 team__item">
+            <div class="team__header">
+              <div class="team__hover">
+                <div class="team__hover__detail">
+                  <span>$69.00</span>
+                  <span>1 - 5 sessions/ month</span>
+                </div>
+              </div>
+              <img class="team__bg-img" src="images/team-bg.png" alt="">
+            </div>
+            <div class="team__ava">
+              <img class="team__ava__img" src="images/team-ava1.png" alt="">
+            </div>
+            <div class="team__content">
+              <h4 class="team__name">Eva Adamson</h4>
+              <p class="team__desc">Fitness Instructor</p>
+              <a class="team__link" href="">Sign Up now</a>
+            </div>
+          </li>
+        </ul>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section__header pricing__header">
+          <h2 class="section__title">Pricing</h2>
+          <p class="section__desc">Choose your favorite pricing plans, and sign up today!</p>
+        </div>
+
+        <div class="pricing__body">
+          <div class="yoga">
+            <div class="pricing__info">
+              <h3>Yoga Pillates</h3>
+              <p>$850.00<span> / year</span></p>
+              <a href="">Sign up now</a>
+            </div>
+            <ul class="yoga__list">
+              <li class="yoga__item">One Personal Trainer</li>
+              <li class="yoga__item">One Personal Trainer</li>
+              <li class="yoga__item">One Personal Trainer</li>
+              <li class="yoga__item">One Personal Trainer</li>
+              <li class="yoga__item">One Personal Trainer</li>
+            </ul>
+          </div>
+          <div class="cardio">
+            <div class="pricing__info">
+              <h3 class="pricing__title">Cardio Training</h3>
+              <p>$1000.00<span> / year</span></p>
+              <a href="">Sign up now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section twitter" id="twitter">
+      <div class="container">
+        <ul class="owl-carousel owl-theme slider-twitter">
+          <li class="item">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <p>To enjoy the glow of good health, you must exercise.</p>
+            <span>#health</span>
+            <span>#training</span>
+            <span>#exercise</span>
+          </li>
+          <li class="item">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <p>To enjoy the glow of good health, you must exercise.</p>
+            <span>#health</span>
+            <span>#training</span>
+            <span>#exercise</span>
+          </li>
+          <li class="item">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <p>To enjoy the glow of good health, you must exercise.</p>
+            <span>#health</span>
+            <span>#training</span>
+            <span>#exercise</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <div class="popup-overlay">
+    <div class="popup">
+      <h3 class="popup__title">Sign up</h3>
+      <form action="">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Phone">
+        <input type="text" placeholder="Email Address">
+        <select name="" id="">Pricing plan
+          <option value="">1</option>
+          <option value="">1</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="ft container">
+      <div class="row justify-content-between">
+        <div class="col-md-6 ft__item">
+          <h3 class="ft__title">Reserve a Free Trial Class!</h3>
+          <p class="ft__desc">Shape your body and improve your health.</p>
+          <a class="ft__link" href="">Start Free Trial</a>
+        </div>
+        <div class="col-md-6 ft__item hours">
+          <h3 class="ft__title">Opening Hours</h3>
+          <ul class="row">
+            <li class="col-md-6">
+              <span>Mon - Fri</span>
+              <span>9:00 - 22:00</span>
+            </li>
+            <li class="col-md-6">
+              <span>Sat - Sun</span>
+              <span>10:00 - 18:00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ft__bottom">
+        <p>© 2015 All Rights Reserved. Powered by <a href="">PHIr</a> exclusively for <a href="">Codrops</a></p>
+        <div class="social">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="js/lib.min.js"></script>
 
   <script src="js/main.min.js"></script>
 </body>

@@ -1,0 +1,17 @@
+// color
+$main-color: #bbbbbb;
+$blue : #00a8ff;
+$white: #fff;
+$dark-grey: #333333;
+
+// fonts
+$font-family: 'Proxima';
+
+// transition
+$base-transition: all 0.3s ease-in-out;
+
+// width
+$min-mobile: 320px;
+$max-mobile: 480px;
+$mobile: (min-width: $min-mobile) and (max-width: $max-mobile);
+

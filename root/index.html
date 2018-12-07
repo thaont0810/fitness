@@ -7,19 +7,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Fitness</title>
 
-  <!--build:css css/styles.min.css-->
+  <!--build:css css/lib.min.css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!--endbuild-->
+
+  <!--build:css css/styles.min.css-->
   <link rel="stylesheet" href="css/styles.css">
   <!--endbuild-->
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="header__bg">
-
-    </div>
+  <header class="header" id="top">
+    <div class="header__bg"></div>
     <div class="overlay-header"></div>
     <div class="container header__slogan">
       <p class="header__slogan--1">Take care of your body. </p>
@@ -35,21 +37,24 @@
           </a>
         </h1>
 
-        <ul class="nav__list">
+        <ul class="nav__list" id="nav__list">
           <li class="nav__item">
-            <a href="" class="nav__link">Intro</a>
+            <a href="#top" class="nav__link">Intro</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Services</a>
+            <a href="#services" class="nav__link">Services</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Team</a>
+            <a href="#team" class="nav__link">Team</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Pricing</a>
+            <a href="#pricing" class="nav__link">Pricing</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Revervation</a>
+            <a href="#twitter" class="nav__link">Revervation</a>
+          </li>
+          <li class="nav__item sign-up">
+            <a href="" class="nav__link">Sign up</a>
           </li>
         </ul>
       </nav>
@@ -136,14 +141,14 @@
   </header>
 
   <main>
-    <section class="section services">
+    <section class="section services" id="services">
       <div class="container">
         <div class="section__header">
           <h2 class="section__title">Services</h2>
           <p class="section__desc">Achieve the best results with our wide variety of trainings!</p>
         </div>
 
-        <ul class="row">
+        <ul class="row justify-content-between">
           <li class="col-md-4 services__item">
             <div class="services__img-container">
               <img src="images/icon/monitor.png" alt="">
@@ -172,18 +177,17 @@
       </div>
     </section>
 
-    <section class="section team">
+    <section class="section team" id="team">
       <div class="container">
         <div class="section__header">
           <h2 class="section__title">Team</h2>
           <p class="section__desc">We’re dream team!</p>
         </div>
-
-        <ul class="row">
+        <ul class="row justify-content-between">
           <li class="col-md-4 team__item">
             <div class="team__header">
               <div class="team__hover">
-                <div class="team__hover__content">
+                <div class="team__hover__detail">
                   <span>$69.00</span>
                   <span>1 - 5 sessions/ month</span>
                 </div>
@@ -191,7 +195,7 @@
               <img class="team__bg-img" src="images/team-bg.png" alt="">
             </div>
             <div class="team__ava">
-              <img class="team__ava__img" src="images/team-ava1.png" alt="">
+              <img class="team__ava__img" src="images/team-ava.png" alt="">
             </div>
             <div class="team__content">
               <h4 class="team__name">Eva Adamson</h4>
@@ -202,7 +206,7 @@
           <li class="col-md-4 team__item">
             <div class="team__header">
               <div class="team__hover">
-                <div class="team__hover__content">
+                <div class="team__hover__detail">
                   <span>$69.00</span>
                   <span>1 - 5 sessions/ month</span>
                 </div>
@@ -210,7 +214,7 @@
               <img class="team__bg-img" src="images/team-bg.png" alt="">
             </div>
             <div class="team__ava">
-              <img class="team__ava__img" src="images/team-ava1.png" alt="">
+              <img class="team__ava__img" src="images/team-ava.png" alt="">
             </div>
             <div class="team__content">
               <h4 class="team__name">Eva Adamson</h4>
@@ -221,7 +225,7 @@
           <li class="col-md-4 team__item">
             <div class="team__header">
               <div class="team__hover">
-                <div class="team__hover__content">
+                <div class="team__hover__detail">
                   <span>$69.00</span>
                   <span>1 - 5 sessions/ month</span>
                 </div>
@@ -238,14 +242,136 @@
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section__header pricing__header">
+          <h2 class="section__title">Pricing</h2>
+          <p class="section__desc">Choose your favorite pricing plans, and sign up today!</p>
+        </div>
+
+        <div class="pricing__body">
+          <div class="yoga">
+            <div class="pricing__info">
+              <h3>Yoga Pillates</h3>
+              <p>$850.00<span> / year</span></p>
+              <a href="">Sign up now</a>
+            </div>
+            <ul class="yoga__list">
+              <li class="yoga__item">One Personal Trainer</li>
+              <li class="yoga__item">One Personal Trainer</li>
+              <li class="yoga__item">One Personal Trainer</li>
+              <li class="yoga__item">One Personal Trainer</li>
+              <li class="yoga__item">One Personal Trainer</li>
+            </ul>
+          </div>
+          <div class="cardio">
+            <div class="pricing__info">
+              <h3 class="pricing__title">Cardio Training</h3>
+              <p>$1000.00<span> / year</span></p>
+              <a href="">Sign up now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section twitter" id="twitter">
+      <div class="container">
+        <ul class="owl-carousel owl-theme slider-twitter">
+          <li class="item">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <p>To enjoy the glow of good health, you must exercise.</p>
+            <span>#health</span>
+            <span>#training</span>
+            <span>#exercise</span>
+          </li>
+          <li class="item">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <p>To enjoy the glow of good health, you must exercise.</p>
+            <span>#health</span>
+            <span>#training</span>
+            <span>#exercise</span>
+          </li>
+          <li class="item">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <p>To enjoy the glow of good health, you must exercise.</p>
+            <span>#health</span>
+            <span>#training</span>
+            <span>#exercise</span>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 
+  <div class="popup-overlay">
+    <div class="popup">
+      <h3 class="popup__title">Sign up</h3>
+      <form>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Phone">
+        <input type="text" placeholder="Email Address">
+        <select>Pricing plan
+          <option>1</option>
+          <option>1</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <footer>
+    <div class="ft container">
+      <div class="row justify-content-between">
+        <div class="col-md-6 ft__item">
+          <h3 class="ft__title">Reserve a Free Trial Class!</h3>
+          <p class="ft__desc">Shape your body and improve your health.</p>
+          <a class="ft__link" href="">Start Free Trial</a>
+        </div>
+        <div class="col-md-6 ft__item hours">
+          <h3 class="ft__title">Opening Hours</h3>
+          <ul class="row">
+            <li class="col-md-6">
+              <span>Mon - Fri</span>
+              <span>9:00 - 22:00</span>
+            </li>
+            <li class="col-md-6">
+              <span>Sat - Sun</span>
+              <span>10:00 - 18:00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ft__bottom">
+        <p>© 2015 All Rights Reserved. Powered by <a href="">PHIr</a> exclusively for <a href="">Codrops</a></p>
+        <div class="social">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <!--build:js js/lib.min.js -->
+  <script src="js/lib/jquery-nav.js"></script>
+  <script src="js/lib/owl.carousel.min.js"></script>
+  <script src="js/lib/typewriter.js"></script>
+  <!-- endbuild -->
+
   <!--build:js js/main.min.js -->
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/typewriter.js"></script>
   <script src="js/main.js"></script>
   <!-- endbuild -->
 </body>

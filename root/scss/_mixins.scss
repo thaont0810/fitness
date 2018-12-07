@@ -1,0 +1,8 @@
+// @import 'mixins/transitions';
+
+@mixin transition-ease($base-transition) {
+  -webkit-transition: $base-transition;
+  -moz-transition: $base-transition;
+  -ms-transition: $base-transition;
+  transition: $base-transition;
+}
